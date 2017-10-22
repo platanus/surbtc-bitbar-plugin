@@ -5,7 +5,7 @@
 # <bitbar.author>Agustin Feuerhake</bitbar.author>
 # <bitbar.author.github>agustinf</bitbar.author.github>
 # <bitbar.desc>Shows prices and volume for cryptocurrencies in SurBTC</bitbar.desc>
-# <bitbar.image>http://www.hosted-somewhere/pluginimage</bitbar.image>
+# <bitbar.image>https://raw.githubusercontent.com/platanus/surbtc-bitbar-plugin/master/image/image.png</bitbar.image>
 # <bitbar.dependencies>bash<bitbar.dependencies>
 
 bitcoin_icon='iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAACXBIWXMAABYlAAAWJQFJUiTwAAABY0lEQVRIx2P4z0AdyEBzg1DAdIYfQJgCZHmCWdsYMAFRBs0BC2UAWT5g1p6hbZAggwIcrgALVQNZSWDWAQY24g3qwRtJ/xgeMqxkCGJgotQgGLzAoEUdg/4zvGQQIxzYLAyODF/gQv0MlgwWDK4MOQxbgV5DKG0nLtZ2wIUykII2EMmoU8QZtAWrQQwMB+HiDygzaDNc/CQlBskwfIKLN5JrkAxDFsMTuOh9BiFSDXoHDI2HDB9RlJ1kECc2r20hkI5OMXhQxyAQzCTNoDJgaAgAvaLLEMkwn+EbkuLvDBLkR78yUoD/Z0gn3yAGhnwk5V2UGBRGLYNmICkvIGzQLqwG8TA0oJQAVvgMymcoYehg+AUXWgoM0kygWC/DbpQ4+89wjYERt0FiRNeNX4GlFJ505EykMacZDPGn7HwCBnxiOMcwjcGJcOEvzqADh2vBQk1AVhaYdZCBc7TKpqJBA9ZiAwDMH49EXcmY2QAAAABJRU5ErkJggg=='
