@@ -15,8 +15,8 @@ eth_icon='iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAABYlAAAWJQFJUi
 
 btcclp="$(curl -s 'https://www.buda.com/api/v2/markets/btc-clp/ticker.json')"
 ethclp="$(curl -s 'https://www.buda.com/api/v2/markets/eth-clp/ticker.json')"
-btccop="$(curl -s 'https://www.buda.com/api/v2/markets/btc-cop/ticker.json')"
-ethcop="$(curl -s 'https://www.buda.com/api/v2/markets/eth-cop/ticker.json')"
+btcars="$(curl -s 'https://www.buda.com/api/v2/markets/btc-ars/ticker.json')"
+ethars="$(curl -s 'https://www.buda.com/api/v2/markets/eth-ars/ticker.json')"
 btcpen="$(curl -s 'https://www.buda.com/api/v2/markets/btc-pen/ticker.json')"
 ethpen="$(curl -s 'https://www.buda.com/api/v2/markets/eth-pen/ticker.json')"
 
@@ -39,11 +39,11 @@ btcclp_last_price() {
 ethclp_last_price() {
   preprocess "$ethclp" "last_price" "" ""
 }
-btccop_last_price() {
-  preprocess "$btccop" "last_price" "" ""
+btcars_last_price() {
+  preprocess "$btcars" "last_price" "" ""
 }
-ethcop_last_price() {
-  preprocess "$ethcop" "last_price" "" ""
+ethars_last_price() {
+  preprocess "$ethars" "last_price" "" ""
 }
 btcpen_last_price() {
   preprocess "$btcpen" "last_price" "" ""
@@ -63,15 +63,15 @@ preprocess "$ethclp" "min_ask" "  ASK" "|size=11 color=green"
 preprocess "$ethclp" "max_bid" "  BID" "|size=11 color=red"
 preprocess "$ethclp" "volume" "24hr VOL" "|size=11 color=black"
 echo "---"
-echo "COP $(btccop_last_price) |size=14 image=$bitcoin_icon"
-preprocess "$btccop" "min_ask" "  ASK" "|size=11 color=green"
-preprocess "$btccop" "max_bid" "  BID" "|size=11 color=red"
-preprocess "$btccop" "volume" "24hr VOL" "|size=11 color=black"
+echo "ARS $(btcars_last_price) |size=14 image=$bitcoin_icon"
+preprocess "$btcars" "min_ask" "  ASK" "|size=11 color=green"
+preprocess "$btcars" "max_bid" "  BID" "|size=11 color=red"
+preprocess "$btcars" "volume" "24hr VOL" "|size=11 color=black"
 echo "---"
-echo "COP $(ethcop_last_price) |size=14 image=$eth_icon"
-preprocess "$ethcop" "min_ask" "  ASK" "|size=11 color=green"
-preprocess "$ethcop" "max_bid" "  BID" "|size=11 color=red"
-preprocess "$ethcop" "volume" "24hr VOL" "|size=11 color=black"
+echo "ARS $(ethars_last_price) |size=14 image=$eth_icon"
+preprocess "$ethars" "min_ask" "  ASK" "|size=11 color=green"
+preprocess "$ethars" "max_bid" "  BID" "|size=11 color=red"
+preprocess "$ethars" "volume" "24hr VOL" "|size=11 color=black"
 echo "---"
 echo "PEN $(btcpen_last_price) |size=14 image=$bitcoin_icon"
 preprocess "$btcpen" "min_ask" "  ASK" "|size=11 color=green"
